@@ -10,8 +10,15 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+protocol CameraVCDelegate {
+    func onSubmit()
+}
 
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var onSubmit: (() -> Void)? // 1- define a closure
+    
+    var delegate: CameraVCDelegate?
     
     @IBAction func onCancelButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -34,6 +41,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         post.saveInBackground { (success, error) in
             if success {
                 print("Saved!")
+                //self.onSubmit?() //2- call the protocal
+                self.delegate?.onSubmit()
                 self.dismiss(animated: true, completion: nil)
             } else {
                 print("error!")

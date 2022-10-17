@@ -21,6 +21,8 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+<p float="left">  <img src='http://g.recordit.co/MyTRG3zrk5.gif' width='250'/>  <img src='http://g.recordit.co/tVjUtJzwZ2.gif' width='250'/> 
+</p>
 ![](http://g.recordit.co/MyTRG3zrk5.gif)
 
 # Parstagram - Part I

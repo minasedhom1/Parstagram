@@ -21,9 +21,10 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-tVjUtJzwZ2
+
 ![](http://g.recordit.co/MyTRG3zrk5.gif)
-![](http://g.recordit.co/NKLnadzAek.gif)
+![](http://g.recordit.co/tVjUtJzwZ2.gif)
+rDwu4zXpJc
 
 
 # Parstagram - Part I

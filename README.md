@@ -22,6 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![]([name-of-giphy.gif](http://g.recordit.co/MyTRG3zrk5.gif))
 
 <p float="left">
   <img src='http://g.recordit.co/MyTRG3zrk5.gif' width='250'/> 

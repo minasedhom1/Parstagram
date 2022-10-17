@@ -23,8 +23,8 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ![](http://g.recordit.co/MyTRG3zrk5.gif)
-![](http://g.recordit.co/MyTRG3zrk5.gif)
-![](http://g.recordit.co/MyTRG3zrk5.gif)
+![](http://g.recordit.co/tVjUtJzwZ2.gif)
+![](http://g.recordit.co/mBvQwu84li.gif)
 
 
 # Parstagram - Part I

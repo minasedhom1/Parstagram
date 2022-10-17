@@ -24,7 +24,7 @@ Here's a walkthrough of implemented user stories:
 
 ![](http://g.recordit.co/MyTRG3zrk5.gif)
 ![](http://g.recordit.co/tVjUtJzwZ2.gif)
-rDwu4zXpJc
+![](http://g.recordit.co/rDwu4zXpJc.gif)
 
 
 # Parstagram - Part I

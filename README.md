@@ -24,12 +24,6 @@ Here's a walkthrough of implemented user stories:
 
 ![]([name-of-giphy.gif](http://g.recordit.co/MyTRG3zrk5.gif))
 
-<p float="left">
-  <img src='http://g.recordit.co/MyTRG3zrk5.gif' width='250'/> 
-  <img src='http://g.recordit.co/tVjUtJzwZ2.gif' width='250'/> 
-  <img src='http://g.recordit.co/mBvQwu84li.gif' width='250/> 
-</p>
-
 # Parstagram - Part I
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.

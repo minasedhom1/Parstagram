@@ -21,8 +21,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-![]([name-of-giphy.gif](http://g.recordit.co/MyTRG3zrk5.gif))
+![](http://g.recordit.co/MyTRG3zrk5.gif)
 
 # Parstagram - Part I
 

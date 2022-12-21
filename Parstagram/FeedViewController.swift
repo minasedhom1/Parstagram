@@ -12,7 +12,8 @@ import AlamofireImage
 import Kingfisher
 import MessageInputBar
 
-class FeedViewController: UIViewController, CameraVCDelegate, MessageInputBarDelegate {
+class FeedViewController: UIViewController, MessageInputBarDelegate//,  CameraVCDelegate
+{
     
     func onSubmit() {
         loadPosts()
@@ -80,14 +81,13 @@ class FeedViewController: UIViewController, CameraVCDelegate, MessageInputBarDel
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCameraVC" {
-            let cameraVC = segue.destination as? CameraViewController
-            
-            cameraVC?.delegate = self
-            
+            let cameraVC = segue.destination as? NewPostViewController
             
             cameraVC?.onSubmit = {
                 self.loadPosts()
             }
+            
+           // cameraVC?.delegate = self
         }
     }
     
@@ -235,6 +235,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
                        let userImageUrlString = userImageFile.url!
                        let userImageUrl = URL(string: userImageUrlString)!
                        cell.profileImageView.af.setImage(withURL: userImageUrl)
+                
             }
             
             return cell

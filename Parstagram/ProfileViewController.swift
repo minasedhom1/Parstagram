@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var themeSwitch: UISwitch!
-    let user = PFUser.current()!
+    
 
   
     @IBAction func onProfileButton(_ sender: Any) {
@@ -40,10 +40,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         // Do something
     }
-    
+    var user = PFUser.current()!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         themeSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
 
         usernameLabel.text = " \(user.username ?? "No name") !"

@@ -41,8 +41,12 @@ class LoginViewController: UIViewController {
 //        }
         let signUpVC = SignupViewController()
         navigationController?.pushViewController(signUpVC, animated: true)
+        signUpVC.onSignUp = { username in
+            self.usernameField.text = username
+        }
         
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

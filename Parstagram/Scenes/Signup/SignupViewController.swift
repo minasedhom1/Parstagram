@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignupViewController: UIViewController {
     
@@ -14,26 +15,28 @@ class SignupViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
     
+    var onSignUp: ((String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
 
     @IBAction private func onSignupButton(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextField.text
         
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.onSignUp?(self.usernameTextField.text!)
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  ```
  configuration.applicationId = @"<#YOUR APPLICATION ID#>"
- configuration.clientKey = @"<#YOUR CLIENT KEY#>"
+ configuration.clientKey = @"YOUR CLIENT KEY"
  configuration.localDatastoreEnabled = true
  ```
  */
